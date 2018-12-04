@@ -13,13 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('TheFirstPage/aSignIn'))
+WebUI.openBrowser('http://172.16.164.14/')
 
-WebUI.setText(findTestObject('SignIn/inputEmail'), 'tai.lshie@gmail.com')
-
-WebUI.setEncryptedText(findTestObject('SignIn/inputPassword'), 'fJfSCPMMNStOFxmDHq2mgQ==')
-
-WebUI.click(findTestObject('SignIn/spanSignIn'))
-
-WebUI.waitForElementVisible(findTestObject('Home/li_Profile'), 0)
+WebUI.waitForElementVisible(findTestObject('TheFirstPage/aSignIn'), 0)
 

@@ -13,9 +13,23 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Page_Welcome to Athlete Network/a_CAREERS_dropdown-toggle'))
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.interactions.Actions as Actions
 
-WebUI.click(findTestObject('Page_Welcome to Athlete Network/a_LOGOUT'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Welcome to Athlete Network/a_Sign In'), 0)
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Home/li_Profile'))
+
+WebUI.delay(1)
+
+
+WebUI.waitForElementVisible(findTestObject('Home/aLogout'), 0)
+
+WebUI.click(findTestObject('Home/aLogout'))
+
+WebUI.verifyElementPresent(findTestObject('TheFirstPage/aSignIn'), 0)
 

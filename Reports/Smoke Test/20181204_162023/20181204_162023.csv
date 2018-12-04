@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Smoke Test,,,2018-12-04 16:20:25,2018-12-04 16:20:26,1.465s,FAILED
+,,,,,,
+Test Cases/Common Cases/Login,,,2018-12-04 16:20:25,2018-12-04 16:20:26,0.868s,FAILED
+"openBrowser(""http://172.16.164.14/"")",,,2018-12-04 16:20:25,2018-12-04 16:20:26,0.427s,FAILED
+,,,,,,
+Test Cases/Common Cases/Logout,,,2018-12-04 16:20:26,2018-12-04 16:20:26,0.286s,FAILED
+"click(findTestObject(""Home/liProfile""))",,,2018-12-04 16:20:26,2018-12-04 16:20:26,0.067s,FAILED

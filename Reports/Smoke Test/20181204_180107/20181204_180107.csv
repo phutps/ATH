@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Smoke Test,Chrome 70.0.3538.110,,2018-12-04 18:01:09,2018-12-04 18:01:59,50.491s,ERROR
+,,,,,,
+Test Cases/Common Cases/Login,Chrome 70.0.3538.110,,2018-12-04 18:01:09,2018-12-04 18:01:58,49.162s,PASSED
+"openBrowser(""http://172.16.164.14/"")",Chrome 70.0.3538.110,,2018-12-04 18:01:09,2018-12-04 18:01:52,42.734s,PASSED
+"waitForElementVisible(findTestObject(""TheFirstPage/aSignIn""), 90)",Chrome 70.0.3538.110,,2018-12-04 18:01:52,2018-12-04 18:01:52,0.097s,PASSED
+"click(findTestObject(""TheFirstPage/aSignIn""))",Chrome 70.0.3538.110,,2018-12-04 18:01:52,2018-12-04 18:01:52,0.286s,PASSED
+"setText(findTestObject(""SignIn/inputEmail""), ""tai.lshie@gmail.com"")",Chrome 70.0.3538.110,,2018-12-04 18:01:52,2018-12-04 18:01:53,0.386s,PASSED
+"setEncryptedText(findTestObject(""SignIn/inputPassword""), ""fJfSCPMMNStOFxmDHq2mgQ=="")",Chrome 70.0.3538.110,,2018-12-04 18:01:53,2018-12-04 18:01:53,0.401s,PASSED
+"click(findTestObject(""SignIn/spanSignIn""))",Chrome 70.0.3538.110,,2018-12-04 18:01:53,2018-12-04 18:01:53,0.325s,PASSED
+"waitForElementVisible(findTestObject(""Home/li_Profile""), 90)",Chrome 70.0.3538.110,,2018-12-04 18:01:53,2018-12-04 18:01:58,4.651s,PASSED
+,,,,,,
+Test Cases/Common Cases/Logout,Chrome 70.0.3538.110,,2018-12-04 18:01:58,2018-12-04 18:01:58,0.217s,ERROR
+driver = getWebDriver(),Chrome 70.0.3538.110,,2018-12-04 18:01:58,2018-12-04 18:01:58,0.007s,PASSED
+builder = new org.openqa.selenium.interactions.Actions(driver),Chrome 70.0.3538.110,,2018-12-04 18:01:58,2018-12-04 18:01:58,0.007s,PASSED
+"sourceElement = findTestObject(""Home/li_Profile"")",Chrome 70.0.3538.110,,2018-12-04 18:01:58,2018-12-04 18:01:58,0.011s,ERROR

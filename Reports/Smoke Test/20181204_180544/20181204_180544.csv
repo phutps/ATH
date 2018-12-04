@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Smoke Test,Chrome 70.0.3538.110,,2018-12-04 18:05:45,2018-12-04 18:07:04,1m - 18.486s,FAILED
+,,,,,,
+Test Cases/Common Cases/Login,Chrome 70.0.3538.110,,2018-12-04 18:05:45,2018-12-04 18:06:27,41.620s,PASSED
+"openBrowser(""http://172.16.164.14/"")",Chrome 70.0.3538.110,,2018-12-04 18:05:46,2018-12-04 18:06:22,36.787s,PASSED
+"waitForElementVisible(findTestObject(""TheFirstPage/aSignIn""), 90)",Chrome 70.0.3538.110,,2018-12-04 18:06:22,2018-12-04 18:06:23,0.101s,PASSED
+"click(findTestObject(""TheFirstPage/aSignIn""))",Chrome 70.0.3538.110,,2018-12-04 18:06:23,2018-12-04 18:06:23,0.210s,PASSED
+"setText(findTestObject(""SignIn/inputEmail""), ""tai.lshie@gmail.com"")",Chrome 70.0.3538.110,,2018-12-04 18:06:23,2018-12-04 18:06:23,0.281s,PASSED
+"setEncryptedText(findTestObject(""SignIn/inputPassword""), ""fJfSCPMMNStOFxmDHq2mgQ=="")",Chrome 70.0.3538.110,,2018-12-04 18:06:23,2018-12-04 18:06:23,0.215s,PASSED
+"click(findTestObject(""SignIn/spanSignIn""))",Chrome 70.0.3538.110,,2018-12-04 18:06:23,2018-12-04 18:06:23,0.119s,PASSED
+"waitForElementVisible(findTestObject(""Home/li_Profile""), 90)",Chrome 70.0.3538.110,,2018-12-04 18:06:23,2018-12-04 18:06:27,3.635s,PASSED
+,,,,,,
+Test Cases/Common Cases/Logout,Chrome 70.0.3538.110,,2018-12-04 18:06:27,2018-12-04 18:07:03,35.834s,FAILED
+driver = getWebDriver(),Chrome 70.0.3538.110,,2018-12-04 18:06:27,2018-12-04 18:06:27,0.008s,PASSED
+builder = new org.openqa.selenium.interactions.Actions(driver),Chrome 70.0.3538.110,,2018-12-04 18:06:27,2018-12-04 18:06:27,0.008s,PASSED
+"sourceElement = findWebElement(findTestObject(""Home/li_Profile""), 20)",Chrome 70.0.3538.110,,2018-12-04 18:06:27,2018-12-04 18:06:27,0.023s,PASSED
+build().perform(),Chrome 70.0.3538.110,,2018-12-04 18:06:27,2018-12-04 18:06:27,0.073s,PASSED
+delay(5),Chrome 70.0.3538.110,,2018-12-04 18:06:27,2018-12-04 18:06:32,5.015s,PASSED
+"waitForElementVisible(findTestObject(""Home/aLogout""), 0)",Chrome 70.0.3538.110,,2018-12-04 18:06:32,2018-12-04 18:07:03,30.088s,PASSED
+"click(findTestObject(""Home/aLogout""))",Chrome 70.0.3538.110,,2018-12-04 18:07:03,2018-12-04 18:07:03,0.357s,FAILED

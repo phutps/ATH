@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Smoke Test,Chrome 70.0.3538.110,,2018-12-04 16:44:35,2018-12-04 16:46:13,1m - 37.933s,PASSED
+,,,,,,
+Test Cases/Common Cases/Login,Chrome 70.0.3538.110,,2018-12-04 16:44:35,2018-12-04 16:45:53,1m - 18.364s,PASSED
+"openBrowser(""http://172.16.164.14/"")",Chrome 70.0.3538.110,,2018-12-04 16:44:35,2018-12-04 16:45:49,1m - 13.677s,PASSED
+"waitForElementVisible(findTestObject(""TheFirstPage/aSignIn""), 90)",Chrome 70.0.3538.110,,2018-12-04 16:45:49,2018-12-04 16:45:49,0.092s,PASSED
+"click(findTestObject(""TheFirstPage/aSignIn""))",Chrome 70.0.3538.110,,2018-12-04 16:45:49,2018-12-04 16:45:49,0.159s,PASSED
+"setText(findTestObject(""SignIn/inputEmail""), ""tai.lshie@gmail.com"")",Chrome 70.0.3538.110,,2018-12-04 16:45:49,2018-12-04 16:45:49,0.183s,PASSED
+"setEncryptedText(findTestObject(""SignIn/inputPassword""), ""fJfSCPMMNStOFxmDHq2mgQ=="")",Chrome 70.0.3538.110,,2018-12-04 16:45:49,2018-12-04 16:45:50,0.191s,PASSED
+"click(findTestObject(""SignIn/spanSignIn""))",Chrome 70.0.3538.110,,2018-12-04 16:45:50,2018-12-04 16:45:50,0.081s,PASSED
+"waitForElementVisible(findTestObject(""Home/li_Profile""), 90)",Chrome 70.0.3538.110,,2018-12-04 16:45:50,2018-12-04 16:45:53,3.620s,PASSED
+,,,,,,
+Test Cases/Common Cases/Logout,Chrome 70.0.3538.110,,2018-12-04 16:45:53,2018-12-04 16:46:12,18.495s,PASSED
+"mouseOver(findTestObject(""Home/li_Profile""))",Chrome 70.0.3538.110,,2018-12-04 16:45:53,2018-12-04 16:45:54,0.049s,PASSED
+"click(findTestObject(""Home/li_Profile""))",Chrome 70.0.3538.110,,2018-12-04 16:45:54,2018-12-04 16:45:54,0.053s,PASSED
+"waitForElementVisible(findTestObject(""Home/aLogout""), 0)",Chrome 70.0.3538.110,,2018-12-04 16:45:54,2018-12-04 16:46:07,13.752s,PASSED
+"click(findTestObject(""Home/aLogout""))",Chrome 70.0.3538.110,,2018-12-04 16:46:07,2018-12-04 16:46:12,4.408s,PASSED
+"verifyElementPresent(findTestObject(""TheFirstPage/aSignIn""), 0)",Chrome 70.0.3538.110,,2018-12-04 16:46:12,2018-12-04 16:46:12,0.028s,PASSED

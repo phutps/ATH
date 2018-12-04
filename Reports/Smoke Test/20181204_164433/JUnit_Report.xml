@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoke Test" time="97" tests="2" failures="0" errors="0">
+   <testsuite name="Smoke Test" tests="2" failures="0" errors="0" time="97" timestamp="2018-12-04 16:44:35" hostname="phu.dang - DESKTOP-CGE32Q2.tpssoft.com.vn" id="Test Suites/Smoke Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\phu.dang\\git\\LND\\Reports\\Smoke Test\\20181204_164433"/>
+         <property name="logFiles" value="C:\\Users\\phu.dang\\git\\LND\\Reports\\Smoke Test\\20181204_164433\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="phu.dang - DESKTOP-CGE32Q2.tpssoft.com.vn"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.9.1.2"/>
+         <property name="browser" value="Chrome 70.0.3538.110"/>
+         <property name="hostAddress" value="169.254.196.151"/>
+         <property name="sessionId" value="fa4bfcf6625b0b13b9f3230d10e1e181"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Common Cases/Login" classname="Test Cases/Common Cases/Login" status="PASSED">
+         <system-out><![CDATA[2018-12-04 16:44:35 - [TEST_CASE][PASSED] - Test Cases/Common Cases/Login: Test Cases/Common Cases/Login
+
+2018-12-04 16:44:35 - [TEST_STEP][PASSED] - openBrowser("http://172.16.164.14/"): Browser is opened with url: 'http://172.16.164.14/'
+
+2018-12-04 16:44:36 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2018-12-04 16:44:36 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2018-12-04 16:45:49 - [MESSAGE][PASSED] - Browser is opened with url: 'http://172.16.164.14/'
+
+2018-12-04 16:45:49 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("TheFirstPage/aSignIn"), 90): Object 'Object Repository/TheFirstPage/aSignIn' is visible
+
+2018-12-04 16:45:49 - [MESSAGE][PASSED] - Object 'Object Repository/TheFirstPage/aSignIn' is visible
+
+2018-12-04 16:45:49 - [TEST_STEP][PASSED] - click(findTestObject("TheFirstPage/aSignIn")): Object: 'Object Repository/TheFirstPage/aSignIn' is clicked on
+
+2018-12-04 16:45:49 - [MESSAGE][PASSED] - Object: 'Object Repository/TheFirstPage/aSignIn' is clicked on
+
+2018-12-04 16:45:49 - [TEST_STEP][PASSED] - setText(findTestObject("SignIn/inputEmail"), "tai.lshie@gmail.com"): Text 'tai.lshie@gmail.com' is set on object 'Object Repository/SignIn/inputEmail'
+
+2018-12-04 16:45:49 - [MESSAGE][PASSED] - Text 'tai.lshie@gmail.com' is set on object 'Object Repository/SignIn/inputEmail'
+
+2018-12-04 16:45:49 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("SignIn/inputPassword"), "fJfSCPMMNStOFxmDHq2mgQ=="): Text ****** has been set on object 'Object Repository/SignIn/inputPassword'
+
+2018-12-04 16:45:50 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/SignIn/inputPassword'
+
+2018-12-04 16:45:50 - [TEST_STEP][PASSED] - click(findTestObject("SignIn/spanSignIn")): Object: 'Object Repository/SignIn/spanSignIn' is clicked on
+
+2018-12-04 16:45:50 - [MESSAGE][PASSED] - Object: 'Object Repository/SignIn/spanSignIn' is clicked on
+
+2018-12-04 16:45:50 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Home/li_Profile"), 90): Object 'Object Repository/Home/li_Profile' is visible
+
+2018-12-04 16:45:53 - [MESSAGE][PASSED] - Object 'Object Repository/Home/li_Profile' is visible]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Common Cases/Logout" classname="Test Cases/Common Cases/Logout" status="PASSED">
+         <system-out><![CDATA[2018-12-04 16:45:53 - [TEST_CASE][PASSED] - Test Cases/Common Cases/Logout: Test Cases/Common Cases/Logout
+
+2018-12-04 16:45:53 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Home/li_Profile")): Object: 'Object Repository/Home/li_Profile' is hovered
+
+2018-12-04 16:45:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Home/li_Profile' is hovered
+
+2018-12-04 16:45:54 - [TEST_STEP][PASSED] - click(findTestObject("Home/li_Profile")): Object: 'Object Repository/Home/li_Profile' is clicked on
+
+2018-12-04 16:45:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Home/li_Profile' is clicked on
+
+2018-12-04 16:45:54 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Home/aLogout"), 0): Object 'Object Repository/Home/aLogout' is visible
+
+2018-12-04 16:45:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-12-04 16:46:07 - [MESSAGE][PASSED] - Object 'Object Repository/Home/aLogout' is visible
+
+2018-12-04 16:46:07 - [TEST_STEP][PASSED] - click(findTestObject("Home/aLogout")): Object: 'Object Repository/Home/aLogout' is clicked on
+
+2018-12-04 16:46:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Home/aLogout' is clicked on
+
+2018-12-04 16:46:12 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("TheFirstPage/aSignIn"), 0): Object 'Object Repository/TheFirstPage/aSignIn' is present
+
+2018-12-04 16:46:12 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-12-04 16:46:12 - [MESSAGE][PASSED] - Object 'Object Repository/TheFirstPage/aSignIn' is present]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-04 16:44:35 - [TEST_SUITE][PASSED] - Smoke Test: Test Cases/Common Cases/Logout]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

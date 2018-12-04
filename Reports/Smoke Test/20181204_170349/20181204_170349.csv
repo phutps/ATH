@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Smoke Test,Chrome 70.0.3538.110,,2018-12-04 17:03:51,2018-12-04 17:05:22,1m - 31.546s,FAILED
+,,,,,,
+Test Cases/Common Cases/Login,Chrome 70.0.3538.110,,2018-12-04 17:03:51,2018-12-04 17:04:46,54.744s,PASSED
+"openBrowser(""http://172.16.164.14/"")",Chrome 70.0.3538.110,,2018-12-04 17:03:51,2018-12-04 17:04:41,50.090s,PASSED
+"waitForElementVisible(findTestObject(""TheFirstPage/aSignIn""), 90)",Chrome 70.0.3538.110,,2018-12-04 17:04:41,2018-12-04 17:04:41,0.085s,PASSED
+"click(findTestObject(""TheFirstPage/aSignIn""))",Chrome 70.0.3538.110,,2018-12-04 17:04:41,2018-12-04 17:04:41,0.173s,PASSED
+"setText(findTestObject(""SignIn/inputEmail""), ""tai.lshie@gmail.com"")",Chrome 70.0.3538.110,,2018-12-04 17:04:41,2018-12-04 17:04:42,0.194s,PASSED
+"setEncryptedText(findTestObject(""SignIn/inputPassword""), ""fJfSCPMMNStOFxmDHq2mgQ=="")",Chrome 70.0.3538.110,,2018-12-04 17:04:42,2018-12-04 17:04:42,0.195s,PASSED
+"click(findTestObject(""SignIn/spanSignIn""))",Chrome 70.0.3538.110,,2018-12-04 17:04:42,2018-12-04 17:04:42,0.075s,PASSED
+"waitForElementVisible(findTestObject(""Home/li_Profile""), 90)",Chrome 70.0.3538.110,,2018-12-04 17:04:42,2018-12-04 17:04:46,3.654s,PASSED
+,,,,,,
+Test Cases/Common Cases/Logout,Chrome 70.0.3538.110,,2018-12-04 17:04:46,2018-12-04 17:05:21,35.780s,FAILED
+"click(findTestObject(""Home/li_Profile""))",Chrome 70.0.3538.110,,2018-12-04 17:04:46,2018-12-04 17:04:46,0.050s,PASSED
+delay(5),Chrome 70.0.3538.110,,2018-12-04 17:04:46,2018-12-04 17:04:51,5.154s,PASSED
+"waitForElementVisible(findTestObject(""Home/aLogout""), 0)",Chrome 70.0.3538.110,,2018-12-04 17:04:51,2018-12-04 17:05:21,30.027s,PASSED
+"click(findTestObject(""Home/aLogout""))",Chrome 70.0.3538.110,,2018-12-04 17:05:21,2018-12-04 17:05:21,0.363s,FAILED

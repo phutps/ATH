@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoke Test" time="44" tests="1" failures="0" errors="1">
+   <testsuite name="Smoke Test" tests="1" failures="0" errors="1" time="44" timestamp="2018-12-04 18:04:16" hostname="phu.dang - DESKTOP-CGE32Q2.tpssoft.com.vn" id="Test Suites/Smoke Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\phu.dang\\git\\LND\\Reports\\Smoke Test\\20181204_180414"/>
+         <property name="logFiles" value="C:\\Users\\phu.dang\\git\\LND\\Reports\\Smoke Test\\20181204_180414\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="phu.dang - DESKTOP-CGE32Q2.tpssoft.com.vn"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.9.1.2"/>
+         <property name="browser" value="Chrome 70.0.3538.110"/>
+         <property name="hostAddress" value="169.254.196.151"/>
+         <property name="sessionId" value="48793f5f54c3c08cd04fe5ae207e9073"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Common Cases/Login" classname="Test Cases/Common Cases/Login" status="PASSED">
+         <system-out><![CDATA[2018-12-04 18:04:16 - [TEST_CASE][PASSED] - Test Cases/Common Cases/Login: Test Cases/Common Cases/Login
+
+2018-12-04 18:04:17 - [TEST_STEP][PASSED] - openBrowser("http://172.16.164.14/"): Browser is opened with url: 'http://172.16.164.14/'
+
+2018-12-04 18:04:17 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2018-12-04 18:04:17 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2018-12-04 18:04:55 - [MESSAGE][PASSED] - Browser is opened with url: 'http://172.16.164.14/'
+
+2018-12-04 18:04:55 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("TheFirstPage/aSignIn"), 90): Object 'Object Repository/TheFirstPage/aSignIn' is visible
+
+2018-12-04 18:04:55 - [MESSAGE][PASSED] - Object 'Object Repository/TheFirstPage/aSignIn' is visible
+
+2018-12-04 18:04:55 - [TEST_STEP][PASSED] - click(findTestObject("TheFirstPage/aSignIn")): Object: 'Object Repository/TheFirstPage/aSignIn' is clicked on
+
+2018-12-04 18:04:56 - [MESSAGE][PASSED] - Object: 'Object Repository/TheFirstPage/aSignIn' is clicked on
+
+2018-12-04 18:04:56 - [TEST_STEP][PASSED] - setText(findTestObject("SignIn/inputEmail"), "tai.lshie@gmail.com"): Text 'tai.lshie@gmail.com' is set on object 'Object Repository/SignIn/inputEmail'
+
+2018-12-04 18:04:56 - [MESSAGE][PASSED] - Text 'tai.lshie@gmail.com' is set on object 'Object Repository/SignIn/inputEmail'
+
+2018-12-04 18:04:56 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("SignIn/inputPassword"), "fJfSCPMMNStOFxmDHq2mgQ=="): Text ****** has been set on object 'Object Repository/SignIn/inputPassword'
+
+2018-12-04 18:04:56 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/SignIn/inputPassword'
+
+2018-12-04 18:04:56 - [TEST_STEP][PASSED] - click(findTestObject("SignIn/spanSignIn")): Object: 'Object Repository/SignIn/spanSignIn' is clicked on
+
+2018-12-04 18:04:56 - [MESSAGE][PASSED] - Object: 'Object Repository/SignIn/spanSignIn' is clicked on
+
+2018-12-04 18:04:56 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Home/li_Profile"), 90): Object 'Object Repository/Home/li_Profile' is visible
+
+2018-12-04 18:05:00 - [MESSAGE][PASSED] - Object 'Object Repository/Home/li_Profile' is visible]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Common Cases/Logout" classname="Test Cases/Common Cases/Logout" status="ERROR">
+         <error type="ERROR" message="Test Cases/Common Cases/Logout FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiCommonHelper for class: Script1543901664342
+	at Logout.run(Logout:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:291)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:283)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:222)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1543921454776.run(TempTestSuite1543921454776.groovy:36)
+"/>
+         <system-out><![CDATA[2018-12-04 18:05:00 - [TEST_CASE][ERROR] - Test Cases/Common Cases/Logout: Test Cases/Common Cases/Logout FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiCommonHelper for class: Script1543901664342
+	at Logout.run(Logout:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:291)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:283)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:222)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1543921454776.run(TempTestSuite1543921454776.groovy:36)
+
+
+2018-12-04 18:05:00 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2018-12-04 18:05:00 - [TEST_STEP][PASSED] - builder = new org.openqa.selenium.interactions.Actions(driver): null
+
+2018-12-04 18:05:00 - [TEST_STEP][ERROR] - sourceElement = WebUiCommonHelper.findWebElement(findTestObject("Home/li_Profile"), 20): sourceElement = WebUiCommonHelper.findWebElement(findTestObject("Home/li_Profile"), 20) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiCommonHelper for class: Script1543901664342
+	at Logout.run(Logout:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:291)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:283)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:222)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1543921454776.run(TempTestSuite1543921454776.groovy:36)
+
+
+2018-12-04 18:05:00 - [MESSAGE][ERROR] - sourceElement = WebUiCommonHelper.findWebElement(findTestObject("Home/li_Profile"), 20) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiCommonHelper for class: Script1543901664342
+	at Logout.run(Logout:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:291)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:283)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:222)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1543921454776.run(TempTestSuite1543921454776.groovy:36)]]></system-out>
+         <system-err><![CDATA[2018-12-04 18:05:00 - [TEST_CASE][ERROR] - Test Cases/Common Cases/Logout: Test Cases/Common Cases/Logout FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiCommonHelper for class: Script1543901664342
+	at Logout.run(Logout:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:291)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:283)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:222)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1543921454776.run(TempTestSuite1543921454776.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-04 18:04:16 - [TEST_SUITE][ERROR] - Smoke Test: Test Cases/Common Cases/Logout FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiCommonHelper for class: Script1543901664342
+	at Logout.run(Logout:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:291)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:283)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:222)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1543921454776.run(TempTestSuite1543921454776.groovy:36)]]></system-out>
+      <system-err><![CDATA[2018-12-04 18:04:16 - [TEST_SUITE][ERROR] - Smoke Test: Test Cases/Common Cases/Logout FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiCommonHelper for class: Script1543901664342
+	at Logout.run(Logout:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:321)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:291)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:283)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:222)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:149)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1543921454776.run(TempTestSuite1543921454776.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>
