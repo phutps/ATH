@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>2. Create User with school</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9ece699c-145c-4ee4-bcd6-5298817cdb7d</testCaseGuid>
+   <variable>
+      <defaultValue>'SchoolFirst'</defaultValue>
+      <description></description>
+      <id>384876b5-eaf9-44e8-99f4-b65f843650c7</id>
+      <masked>false</masked>
+      <name>firstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'SchoolLast'</defaultValue>
+      <description></description>
+      <id>6897dde9-4f00-4c82-96c0-e634dab76e6a</id>
+      <masked>false</masked>
+      <name>lastName</name>
+   </variable>
+</TestCaseEntity>

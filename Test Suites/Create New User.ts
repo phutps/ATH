@@ -20,7 +20,7 @@
       <guid>c9c9b37a-0e97-4524-b543-a2dbe36a5d9a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User/CreateUser</testCaseId>
+      <testCaseId>Test Cases/User/1. Create User without any school</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
