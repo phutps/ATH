@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login</name>
+   <name>Login - New User</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>8923b0ac-479f-41d4-9fd8-0b28d4141d9f</testCaseGuid>
+   <testCaseGuid>0481c56c-9464-402f-a055-0d693a3a14d4</testCaseGuid>
    <variable>
       <defaultValue>'tai.lshie@gmail.com'</defaultValue>
       <description></description>
-      <id>21a8a490-7da5-4b5d-aecb-a1aaa125896a</id>
+      <id>b697ee6a-26ab-4751-a18f-b463e4ebd3ce</id>
       <masked>false</masked>
       <name>userName</name>
    </variable>
    <variable>
       <defaultValue>'Hello@1234'</defaultValue>
       <description></description>
-      <id>3be9bcdb-c0f4-4b0f-86a5-b170f89d85a9</id>
+      <id>6fd4d2b9-ad71-43d7-8ef3-2e43d5a40b16</id>
       <masked>false</masked>
       <name>passWord</name>
    </variable>

@@ -12,24 +12,21 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.interactions.Actions as Actions
 
-
-WebUI.delay(1)
+WebUI.delay(GlobalVariable.nShortTimeout)
 
 WebUI.click(findTestObject('Home/li_Profile'))
 
-WebUI.delay(1)
+WebUI.delay(GlobalVariable.nShortTimeout)
 
-
-WebUI.waitForElementVisible(findTestObject('Home/aLogout'), 0)
+WebUI.waitForElementVisible(findTestObject('Home/aLogout'), GlobalVariable.nShortTimeout)
 
 WebUI.click(findTestObject('Home/aLogout'))
 
-WebUI.verifyElementPresent(findTestObject('TheFirstPage/aSignIn'), 0)
+WebUI.verifyElementPresent(findTestObject('TheFirstPage/aSignIn'), GlobalVariable.nShortTimeout)
 

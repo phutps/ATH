@@ -5,4 +5,18 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>880cd9ab-3bb2-42a9-bbd6-aa48e9859ff2</testCaseGuid>
+   <variable>
+      <defaultValue>'AutoFirst'</defaultValue>
+      <description></description>
+      <id>7ba90759-9075-41ae-a7b6-a1cc1ad56f86</id>
+      <masked>false</masked>
+      <name>firstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'AutoLast'</defaultValue>
+      <description></description>
+      <id>74ee88c3-b97e-4493-97d4-a8207beaedc0</id>
+      <masked>false</masked>
+      <name>lastName</name>
+   </variable>
 </TestCaseEntity>

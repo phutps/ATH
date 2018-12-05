@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_AccountingAuditing</name>
+   <name>divProfile</name>
    <tag></tag>
-   <elementGuidId>793b79d0-c1b1-480f-aa71-46ad77348fa1</elementGuidId>
+   <elementGuidId>233496b3-1333-4e20-93b8-887667408e4d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//mat-option[@id='mat-option-264']/span</value>
+         <value>//div[@onclick='myFunction()']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,63 +17,63 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>div</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>mat-option-text</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Accounting/Auditing</value>
+      <value>user_pro_hd_img_arrow n_header_pro-res-main</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>myFunction()</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mat-option-264&quot;)/span[@class=&quot;mat-option-text&quot;]</value>
+      <value>id(&quot;main_popup_overlay&quot;)/div[@class=&quot;mn_main&quot;]/div[@class=&quot;mn_top_bg_1&quot;]/div[@class=&quot;mn_top&quot;]/div[@class=&quot;mn_ff_top_right n_header_main_right_side&quot;]/div[@class=&quot;user_pro_hd n_header_profile-main-res-img&quot;]/div[@class=&quot;dropbtn&quot;]/div[@class=&quot;user_pro_hd_img_arrow n_header_pro-res-main&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <value>//div[@onclick='myFunction()']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//mat-option[@id='mat-option-264']/span</value>
+      <value>//div[@id='main_popup_overlay']/div[2]/div/div/div[3]/div[4]/div/div</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('id(', '&quot;', 'mat-option-264', '&quot;', ')/span[@class=', '&quot;', 'mat-option-text', '&quot;', ']')])[1]/following::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='X'])[4]/following::div[6]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='PREVIOUS'])[1]/following::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Profile'])[1]/preceding::div[9]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actuarial Science'])[1]/preceding::span[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Administrative and Support Services'])[1]/preceding::span[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='MESSAGES'])[1]/preceding::div[10]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
-      <value>//mat-option/span</value>
+      <value>//div[3]/div[4]/div/div</value>
    </webElementXpaths>
 </WebElementEntity>

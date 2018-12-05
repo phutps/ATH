@@ -13,3 +13,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.click(findTestObject('TheFirstPage/aSignIn'))
+
+WebUI.setText(findTestObject('SignIn/inputEmail'), (GlobalVariable.sEmail + GlobalVariable.nRand) + '@yopmail.com')
+
+WebUI.setText(findTestObject('SignIn/inputPassword'), '1234@Tps')
+
+WebUI.click(findTestObject('SignIn/spanSignIn'))
+

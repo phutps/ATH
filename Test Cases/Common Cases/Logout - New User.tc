@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create</name>
+   <name>Logout - New User</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>7995b133-abe0-4a68-945c-ee04b4cbe7ff</testCaseGuid>
+   <testCaseGuid>e055b72a-0220-4537-a8cb-61d470862dcc</testCaseGuid>
 </TestCaseEntity>

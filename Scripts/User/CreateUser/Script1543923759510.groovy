@@ -12,56 +12,76 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Date as Date
 
-WebUI.openBrowser('')
+not_run: WebUI.setText(findTestObject('Page_Welcome to Athlete Network/input_ONCE AN ATHLETE ALWAYS A'), firstName + GlobalVariable.nRand)
 
-WebUI.navigateToUrl('http://172.16.164.14/')
+not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_First Name_lastName'), lastName + 
+    GlobalVariable.nRand)
 
-WebUI.setText(findTestObject('Page_Welcome to Athlete Network/input_ONCE AN ATHLETE ALWAYS A'), 'Phu')
+not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Last Name_email'), (GlobalVariable.sEmail + 
+    GlobalVariable.nRand) + '@yopmail.com')
 
-WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_First Name_lastName'), 'Dang')
+not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Email_password'), GlobalVariable.sPassword)
 
-WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Last Name_email'), 'phu2@yopmail.com')
+not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_START'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Email_password'), 'lu6hGZoChIZb6EHOfdrPxQ==')
+not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_ High School'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_START'))
+not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_This will be used as you'), 
+    'Badmington')
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_ High School'))
+not_run: WebUI.click(findTestObject('Page_Welcome to Athlete Network/button_NEXT'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_This will be used as you'), 'runnning')
+not_run: SimpleDateFormat formatter = new SimpleDateFormat('dd/MM/yyyy')
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_NEXT'))
+not_run: Date date = new Date()
 
-WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_We will need to know you'), '10/20/2018')
+not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_We will need to know you'), 
+    formatter.format(date))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/button_NEXT'))
+not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/button_NEXT'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_Select a country'))
+not_run: WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_Select a country'), 
+    GlobalVariable.nTimeout)
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_USA'))
+not_run: WebUI.delay(GlobalVariable.nShortTimeout, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Select a country_locatio'), 'california')
+not_run: WebUI.click(findTestObject('Page_Welcome to Athlete Network/span_Select a country'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_California GA'))
+not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_USA'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/button_NEXT'))
+not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Select a country_locatio'), 
+    'California')
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/button_NEXT'))
+not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_California GA'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_AccountingAuditing'))
+not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/button_NEXT'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_NEXT'))
+WebUI.waitForElementVisible(findTestObject('Page_Welcome to Athlete Network/inputProfessionalInterests'), 0)
+
+WebUI.delay(GlobalVariable.nShortTimeout, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Welcome to Athlete Network/inputProfessionalInterests'))
+
+WebUI.delay(GlobalVariable.nShortTimeout, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementVisible(findTestObject('Page_Welcome to Athlete Network/span_ProfessionalInterest'), 0)
+
+WebUI.click(findTestObject('Page_Welcome to Athlete Network/span_ProfessionalInterest'))
+
+WebUI.click(findTestObject('Page_Welcome to Athlete Network/button_NEXT'))
 
 WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_Ill DO THIS LATER'))
 
-WebUI.click(findTestObject('Object Repository/Page_Feed/a_NEXT'))
+WebUI.waitForElementPresent(findTestObject('Page_Feed/a_NEXT'), GlobalVariable.nTimeout)
 
-WebUI.click(findTestObject('Object Repository/Page_Feed/a_NEXT'))
+WebUI.click(findTestObject('Page_Feed/a_NEXT'))
+
+WebUI.click(findTestObject('Page_Feed/a_NEXT2'))
 
 WebUI.click(findTestObject('Object Repository/Page_Feed/a_FINISHED'))
 
-WebUI.click(findTestObject('Object Repository/Page_Feed/img'))
-
-WebUI.closeBrowser()
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Feed/img'), GlobalVariable.nShortTimeout)
 

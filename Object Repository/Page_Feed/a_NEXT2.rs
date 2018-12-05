@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_NEXT</name>
+   <name>a_NEXT2</name>
    <tag></tag>
-   <elementGuidId>90552e97-f45e-4092-be7b-68d19c57f8fd</elementGuidId>
+   <elementGuidId>c61d4057-747f-49ba-ad5b-8b84c35fff2b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='feed_card_popup1']//a[text()='NEXT']</value>
+         <value>//div[@id='feed_card_popup2']//a[text()='NEXT']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='feed_card_popup1']//a[text()='NEXT']</value>
+      <value>//div[@id='feed_card_popup2']//a[text()='NEXT']</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

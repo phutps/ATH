@@ -12,14 +12,21 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.interactions.Actions as Actions
 
-WebUI.click(findTestObject('TheFirstPage/aSignIn'))
+WebUI.delay(GlobalVariable.nShortTimeout)
 
-WebUI.setText(findTestObject('SignIn/inputEmail'), userName)
+WebUI.click(findTestObject('Page_Feed/divProfile'))
 
-WebUI.setText(findTestObject('SignIn/inputPassword'), passWord)
+WebUI.delay(GlobalVariable.nShortTimeout)
 
-WebUI.click(findTestObject('SignIn/spanSignIn'))
+WebUI.waitForElementVisible(findTestObject('Page_Feed/a_LOGOUT'), GlobalVariable.nShortTimeout)
 
-WebUI.waitForElementVisible(findTestObject('Home/li_Profile'), GlobalVariable.nLongTimeout)
+WebUI.click(findTestObject('Page_Feed/a_LOGOUT'))
+
+WebUI.verifyElementPresent(findTestObject('TheFirstPage/aSignIn'), GlobalVariable.nShortTimeout)
 

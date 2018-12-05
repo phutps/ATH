@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('http://172.16.164.14/')
+WebUI.openBrowser(GlobalVariable.sUrl)
 
-WebUI.waitForElementVisible(findTestObject('TheFirstPage/aSignIn'), 0)
+WebUI.waitForElementVisible(findTestObject('TheFirstPage/aSignIn'), GlobalVariable.nLongTimeout)
 

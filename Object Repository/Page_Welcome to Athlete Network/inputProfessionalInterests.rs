@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_FINISHED</name>
+   <name>inputProfessionalInterests</name>
    <tag></tag>
-   <elementGuidId>9438cb83-02f5-47fe-a578-d2ecfae4d152</elementGuidId>
+   <elementGuidId>011b0088-9574-4b7c-bb35-8073d0e28ccf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@onclick='updateFeedTracking(5000531,3);']</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//div[@id='feed_card_popup3']//a[text()='FINISHED']</value>
+         <value>//mat-form-field//input[@placeholder=&quot;Start typing your professional interests - Agnostic Network&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='feed_card_popup3']//a[text()='FINISHED']</value>
+      <value>//mat-form-field//input[@placeholder=&quot;Start typing your professional interests - Agnostic Network&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
