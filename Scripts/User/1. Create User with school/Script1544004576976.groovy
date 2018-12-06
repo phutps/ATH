@@ -15,49 +15,46 @@ import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
 
-not_run: WebUI.setText(findTestObject('Page_Welcome to Athlete Network/input_ONCE AN ATHLETE ALWAYS A'), firstName + GlobalVariable.nRand)
+WebUI.setText(findTestObject('Page_Welcome to Athlete Network/input_ONCE AN ATHLETE ALWAYS A'), firstName + GlobalVariable.nRand)
 
-not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_First Name_lastName'), lastName + 
+WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_First Name_lastName'), lastName + 
     GlobalVariable.nRand)
 
-not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Last Name_email'), (GlobalVariable.sEmail + 
+WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Last Name_email'), (GlobalVariable.sEmail + 
     GlobalVariable.nRand) + '@yopmail.com')
 
-not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Email_password'), GlobalVariable.sPassword)
+WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Email_password'), GlobalVariable.sPassword)
 
-not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_START'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_START'))
 
-not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_ High School'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_ High School'))
 
-not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_This will be used as you'), 
-    'Badmington')
+WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_This will be used as you'), 'Badmington')
 
-not_run: WebUI.click(findTestObject('Page_Welcome to Athlete Network/button_NEXT'))
+WebUI.click(findTestObject('Page_Welcome to Athlete Network/button_NEXT'))
 
-not_run: SimpleDateFormat formatter = new SimpleDateFormat('dd/MM/yyyy')
+SimpleDateFormat formatter = new SimpleDateFormat('dd/MM/yyyy')
 
-not_run: Date date = new Date()
+Date date = new Date()
 
-not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_We will need to know you'), 
-    formatter.format(date))
+WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_We will need to know you'), formatter.format(
+        date))
 
-not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/button_NEXT'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/button_NEXT'))
 
-not_run: WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_Select a country'), 
-    GlobalVariable.nTimeout)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_Select a country'), GlobalVariable.nTimeout)
 
-not_run: WebUI.delay(GlobalVariable.nShortTimeout, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(GlobalVariable.nShortTimeout, FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Page_Welcome to Athlete Network/span_Select a country'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Welcome to Athlete Network/span_Select a country'), FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_USA'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_USA'))
 
-not_run: WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Select a country_locatio'), 
-    'California')
+WebUI.setText(findTestObject('Object Repository/Page_Welcome to Athlete Network/input_Select a country_locatio'), 'California')
 
-not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_California GA'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/span_California GA'))
 
-not_run: WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/button_NEXT'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Athlete Network/button_NEXT'))
 
 WebUI.waitForElementVisible(findTestObject('Page_Welcome to Athlete Network/inputProfessionalInterests'), 0)
 

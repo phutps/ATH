@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>1. Create User with school</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>011e5628-563d-43eb-b03e-3c85d657781e</testCaseGuid>
+   <variable>
+      <defaultValue>'AutoFirst'</defaultValue>
+      <description></description>
+      <id>63b8bb0e-3c89-4e07-9ed2-444142bbe1b9</id>
+      <masked>false</masked>
+      <name>firstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'AutoLast'</defaultValue>
+      <description></description>
+      <id>0fba70af-b109-49c7-96d3-284448e17a01</id>
+      <masked>false</masked>
+      <name>lastName</name>
+   </variable>
+</TestCaseEntity>
